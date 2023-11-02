@@ -2,6 +2,12 @@ body {
   font-family: "Fira Sans", Arial, sans-serif;
   margin: 0;
   color: #141414;
+  background-color: #f6f7f8;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 h1,
@@ -37,6 +43,6 @@ img {
   .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;
-    max-width: initial;
+    max-width: initial !important;
   }
 }
