@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="Desenvolvedor Full-Stack Javascript/Typescript e PHP, localizado em São Paulo." />
     <title>Dhyon - Desenvolvedor de Software</title>
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      handleScrollTo = (id) => {
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: "smooth" });
+      };
+    </script>
   </head>
   <body>
     <header class="header">
@@ -21,9 +27,9 @@
 
       <nav>
         <ul class="header-menu">
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#formacao">Formação</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a aria-label="Sessão de experiência" onclick="handleScrollTo('experiencia')">Experiência</a></li>
+          <li><a aria-label="Sessão de formação" onclick="handleScrollTo('formacao')">Formação</a></li>
+          <li><a aria-label="Sessão de contato" onclick="handleScrollTo('contato')">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -213,18 +219,53 @@
           Estou disponível para novos projetos no momento, entre em contato comigo e marcamos uma conversa.
         </p>
 
-        <ul class="footer-contato">
-          <li aria-label="Email para contato">
-            <a href="mailto:dhyon.kpm@hotmail.com" aria-label="dhyon.kpm@hotmail.com Link para email"
-              >dhyon.kpm@hotmail.com</a
-            >
-          </li>
-          <li>+55 11 964482864</li>
-          <li><a href="https://wa.me/+5511964482964" aria-label="Link para WhatsApp">WhatsApp</a></li>
-          <li aria-label="Arroba do instagram">
-            <a href="https://www.instagram.com/dhy.on/" aria-label="@dhy.on Link para Instagram">@dhy.on</a>
-          </li>
-        </ul>
+        <div class="footer-contato-container">
+          <ul class="footer-contato">
+            <li aria-label="Email para contato">
+              <a target="_blank" href="mailto:dhyon.kpm@hotmail.com" aria-label="dhyon.kpm@hotmail.com Link para email">
+                <img src="./img/envelope.svg" alt="Ícone de Envelope" width="32px" sizes="32px" />
+                dhyon.kpm@hotmail.com
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://wa.me/+5511964482964" aria-label="Link para WhatsApp">
+                <img src="./img/whatsapp.svg" alt="Ícone de WhatsApp" width="32px" sizes="32px" />
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src="./img/phone-call.svg" alt="Ícone de Chamada" width="32px" sizes="32px" />
+                +55 11 964482864
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-contato">
+            <li aria-label="Linkedin para portfólio">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/dhyonkeyllon/"
+                aria-label="dhyon.kpm@hotmail.com Link para email"
+              >
+                <img src="./img/linkedin.svg" alt="Ícone do Linkedin" width="32px" sizes="32px" />
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/DhyonKeyllon" aria-label="Link para Github">
+                <img src="./img/github.svg" alt="Ícone do Github" width="32px" sizes="32px" />
+                Github
+              </a>
+            </li>
+            <li aria-label="Arroba do instagram">
+              <a target="_blank" href="https://www.instagram.com/dhy.on/" aria-label="@dhy.on Link para Instagram">
+                <img src="./img/instagram.svg" alt="Ícone de Instagram" width="32px" sizes="32px" />
+                @dhy.on
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <p class="footer-copy">Keyllo. Todos os direitos reservados.</p>
       </div>
     </footer>

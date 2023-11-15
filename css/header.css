@@ -25,6 +25,16 @@
   text-decoration: none;
   color: #141414;
   display: block;
+  cursor: pointer;
+}
+
+.header-menu a:hover {
+  color: #892cff;
+  transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
 }
 
 @media (max-width: 800px) {
