@@ -52,7 +52,6 @@
 .faculdade {
   display: flex;
   flex-direction: column;
-  width: max-content;
   background-color: #000;
   padding: 20px;
   border-radius: 8px;
